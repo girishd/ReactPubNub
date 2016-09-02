@@ -64,3 +64,5 @@ AppRegistry.registerComponent('ReactPubNub', () => ReactPubNub);
 `react-native log-android`
 
 [![3.AndroidLog.jpg](https://s13.postimg.org/6wvx1e43b/3_Android_Log.jpg)](https://postimg.org/image/7mepdr4mr/)
+
+## Step 6: Profit
