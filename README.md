@@ -1,4 +1,4 @@
-# ReactPubNub
+# React Native & PubNub
 
 This is a quick example of getting PubNub running in a React Native project.
 
