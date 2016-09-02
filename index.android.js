@@ -12,6 +12,8 @@ import {
   View
 } from 'react-native';
 
+import PubNub from 'pubnub'
+
 class ReactPubNub extends Component {
   render() {
     return (
@@ -30,6 +32,24 @@ class ReactPubNub extends Component {
     );
   }
 }
+
+const pubnub = new PubNub({
+    subscribeKey: "demo",
+    publishKey: "demo",
+    ssl: true
+})
+
+pubnub.addListener({
+    message: function(message) {
+        console.log(message);
+        // handle message
+    }
+})
+
+pubnub.subscribe({ 
+    channels: ['girish'] 
+});
+
 
 const styles = StyleSheet.create({
   container: {
